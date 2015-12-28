@@ -77,14 +77,14 @@ public class BarChart extends View {
         bar1height = (float) (percentage * maxBarHeight) / 100;
        // canvas.drawLine(padding, fullHeight - 25 * scaleFactor, fullWidth - padding,
            //     fullHeight - 25 * scaleFactor, linePaint);
-        float middle = (float) (fullWidth * 0.5);
-        float quarter = (float) (fullWidth * 0.25);
+       /* float middle = (float) (fullWidth * 0.5);
+        float quarter = (float) (fullWidth * 0.25);*/
         int bar1bottom = fullHeight - padding * 3;
         float bar1top = bar1bottom - bar1height;
-        float val1pos = bar1top - padding;
-        canvas.drawRect(padding * 2, bar1top, middle - padding, bar1bottom, boxPaint1);
-       // canvas.drawText("Percent", quarter - padding, fullHeight - padding, textPaint1);
-       // canvas.drawText(percentage + "%", quarter - padding, val1pos, textPaint);
+       // float val1pos = bar1top - padding;
+        canvas.drawRect(padding * 2, bar1top, fullWidth, bar1bottom, boxPaint1);
+       /*// canvas.drawText("Percent", quarter - padding, fullHeight - padding, textPaint1);
+       // canvas.drawText(percentage + "%", quarter - padding, val1pos, textPaint);*/
 
 
     }
